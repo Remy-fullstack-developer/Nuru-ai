@@ -1,0 +1,6 @@
+{
+  "name": "Afrilink AI & KoraTrust",
+  "description": "Offline-first low-bandwidth AI assistant for African languages and alternative credit assessment engine for informal workers using mobile history & community vouching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

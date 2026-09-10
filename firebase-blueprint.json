@@ -1,0 +1,50 @@
+{
+  "entities": {
+    "transactions": {
+      "title": "Transactions",
+      "description": "Mobile Money Ledger Records for credit scoring",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Owner User ID" },
+        "date": { "type": "string" },
+        "type": { "type": "string" },
+        "amount": { "type": "number" },
+        "currency": { "type": "string" },
+        "counterparty": { "type": "string" },
+        "status": { "type": "string" },
+        "reference": { "type": "string" }
+      },
+      "required": ["userId", "date", "type", "amount", "counterparty"]
+    },
+    "guarantors": {
+      "title": "Community Guarantors",
+      "description": "Peer references and community vouching for informal credit assessment",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Owner User ID" },
+        "name": { "type": "string" },
+        "role": { "type": "string" },
+        "phone": { "type": "string" },
+        "relationshipMonths": { "type": "number" },
+        "vouchAmount": { "type": "number" },
+        "trustRating": { "type": "number" },
+        "verificationStatus": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "required": ["userId", "name", "role", "phone", "vouchAmount"]
+    },
+    "qa_messages": {
+      "title": "QA Messages",
+      "description": "Saved AI Assistant queries and answers",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "sender": { "type": "string" },
+        "text": { "type": "string" },
+        "timestamp": { "type": "number" },
+        "language": { "type": "string" }
+      },
+      "required": ["userId", "sender", "text", "timestamp"]
+    }
+  }
+}
